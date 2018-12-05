@@ -1,0 +1,6 @@
+C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease\CL_AutoBuildRelease\bin\Debug\CL_AutoBuildRelease.exe.config
+C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease\CL_AutoBuildRelease\bin\Debug\CL_AutoBuildRelease.exe
+C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease\CL_AutoBuildRelease\bin\Debug\CL_AutoBuildRelease.pdb
+C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease\CL_AutoBuildRelease\obj\Debug\CL_AutoBuildRelease.csprojResolveAssemblyReference.cache
+C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease\CL_AutoBuildRelease\obj\Debug\CL_AutoBuildRelease.exe
+C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease\CL_AutoBuildRelease\obj\Debug\CL_AutoBuildRelease.pdb

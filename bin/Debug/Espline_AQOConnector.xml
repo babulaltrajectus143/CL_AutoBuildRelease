@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AQOConnector mainfolder="Apttus Connector for SAP VC" subfolder="Apttus Connector - rev{SVN} - {Date}">
+  <!-- Avenue Portal Installer -->
+   <file type="SVN" CodePath="C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease" path="C:\AvenueBuild\svn" pathFormat="RepositoryFolder">AvenuePortalSetup.msi</file> 
+  <!-- Installation Guide used for installation-->
+  <file path="C:\AvenueBuild\svn\AvenueVcCompare\Trunk\PublicDist">Avenue Portal Installation Guide.pdf</file>
+  <!-- Custom actions dll used for installer wix -->
+  <file path="C:\AvenueBuild\svn\AvenueVcCompare\Trunk\PublicDist">AvenuePortalInstallLib.CA.dll</file>
+
+  <!-- Translator for Apttus sort by date and take latest always-->
+  <file type="GIT" CodePath="C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease" path="D:\Cdrive_backup\revisions\TranslatorForApttus\TranslatorForApttus" sortby="Date">AvPoTfA_*_*_GITtag_*.msi</file>
+  <!-- Translator for Apttus sort by date and take latest always-->
+  <file type="GIT" CodePath="C:\Users\Shubham\Documents\GitHub\Ext\AutoBuildRelease" path="d:\cdrive_backup\revisions\AQO\AvPo_AvQO_Integration" sortby="Date">AvPoAvQO_debug_*_*_GITtag_*.msi</file>
+
+  <file path="C:\AvenueBuild\svn\AvenueVcCompare\Trunk\PublicDist">Ok.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVcCompare\Trunk\PublicDist">revision.txt</file>
+  <!-- Used by nant services to upgrade Connector -->
+  <file path="C:\AvenueBuild\svn\AvenueVcCompare\Trunk\PublicDist">upgrade.build</file>
+</AQOConnector>

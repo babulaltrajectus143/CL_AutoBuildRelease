@@ -1,0 +1,551 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{63082D72-BACF-4D18-BF19-4CD349C91682}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CL_AutoBuildRelease</RootNamespace>
+    <AssemblyName>CL_AutoBuildRelease</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AvenueReleaseRecord.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="FAAccount.cs" />
+    <Compile Include="FileUpload.cs" />
+    <Compile Include="MailServer.cs" />
+    <Compile Include="PasswordGenerator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\FAWAPI\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="XMLParser.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AccountCreateFreeFromPromotionResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AccountCreateFreeResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AccountLoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNEchoNotificationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNGetNotificationPropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNRegisterDeviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNRegisterDeviceResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNSendNotificationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNUnregisterDeviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNUnregisterDeviceResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.APNUpdateRegistrationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AppendChunkGZipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AppendChunkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AppendChunkResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AppendChunkWithFolderAccessKeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.AppendCommentResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ChunkUploadResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ChunkUploadResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ClientGetAddInVersionResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ClientGetUploadPathResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ConvertDocToPDFResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ConvertDocToPDFStatusResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ConvertImageResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ConvertImageStatusResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ConvertImageToPDFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ConvertImageToPDFResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CopyItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CopyItemsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CreateFolderRecursiveResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CreateFolderResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CreatePictureLinkResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CutItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.CutItemsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DeleteItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DeleteItemsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DeleteMeetingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DocIndexingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DownloadFileResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DownloadFileResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DownloadWithCheckoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.DownloadWithCheckoutResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.EditDocumentWithZohoResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ESendFilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ESendFilesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FaxDefaultsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FaxSendResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FilePropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FileShareHeaderResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FileShareItemImageResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FileShareItemResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.FileShareRequestDocIndexingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetAccountDetailsResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetAPIURLResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetAPNSettingResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetAPNSettingsResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetClientAppInfoResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetClientDetailsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetClientIDResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetCompanyDetailsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetDropBoxDefaultsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetDropBoxDefaultsResult2v2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetELinkDefaultsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetELinkDefaultsResult2v2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetELinkDefaultsResult3v2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetFolderAccessKeyResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetFolderPropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetID3TagResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetImageStreamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetImageStreamResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetMediaStreamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetMediaStreamResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetMeetingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetMeetingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetNotificationSettingForDeviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetNotificationSettingsForDeviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetNotificationsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetStorageLocationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GetTIFFPageCountResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GroupShareAdd2Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GroupShareAddResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GroupShareGetFoldersFullControlResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.GroupShareRemoveResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.IndexedItemPropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemAdvPropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemCommentAddResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemCommentRemoveResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemCommentsListResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemCommentsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemCommentUpdateResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemDescriptionAddResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemDescriptionResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemImageResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ItemPropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListGroupShareUsersResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListItemsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListItemsWithPermissionsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListLogActivitiesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListLogActivitiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListLogActivitiesWithThumbnailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListMeetingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListMeetingsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListUserVolumesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ListUserVolumesv2Result.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.LoginResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.LoginResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.LogoutResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.MoveItemsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.MoveItemsResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.PasteResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.RegisterDeviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.RegisterDeviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.RenameItemResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.RequestDocIndexingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ScheduleMeetingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.ScheduleMeetingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SearchFilesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SearchFilesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendElinkListResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendElinkResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendFileShareLinkResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendItemsELink2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendItemsELink3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendItemsELinkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendItemsELinkWithDefaultsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendNotificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SendNotificationResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetAccountDetailsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetAccountDetailsResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetAPNSettingsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetDropBoxDefaultsResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetELinkDefaultsResultv2.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetFolderPropertiesResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetNotificationSettingsForDeviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SetProfileImageResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.SSOLoginURLResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.StopSharingGroupShareResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UndoCheckoutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UndoCheckoutResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UnregisterDeviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UnregisterDeviceResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UpdateMeetingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UpdateUserProfileResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UploadFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UploadFileResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UploadFileWithCheckinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UploadFileWithFolderAccessKeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UserAddResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UserLookupResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\CL_AutoBuildRelease.FAWAPI.UserParamResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\FAWAPI\fawapi.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\FAWAPI\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FAWAPI\fawapi.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FAWAPI\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FAWAPI\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\FAWAPI\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Espline_AQO.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Espline_AQOConnector.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

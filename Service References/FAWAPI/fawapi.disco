@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<discovery xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.xmlsoap.org/disco/">
+  <contractRef ref="https://api.filesanywhere.com/v2/fawapi.asmx?wsdl" docRef="https://api.filesanywhere.com/v2/fawapi.asmx" xmlns="http://schemas.xmlsoap.org/disco/scl/" />
+  <soap address="https://api.filesanywhere.com/v2/fawapi.asmx" xmlns:q1="http://api.filesanywhere.com/" binding="q1:FAWAPIv2Soap" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+  <soap address="https://api.filesanywhere.com/v2/fawapi.asmx" xmlns:q2="http://api.filesanywhere.com/" binding="q2:FAWAPIv2Soap12" xmlns="http://schemas.xmlsoap.org/disco/soap/" />
+</discovery>

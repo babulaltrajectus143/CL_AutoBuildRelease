@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AvenueManagingVC mainfolder="Avenue Managing VC" subfolder="Avenue Managing VC - rev{SVN} - {Date}">
+
+  <!-- Avenue Portal -->
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">Avenue Portal Installation Guide.pdf</file>	<!-- Installation Guide used for installation-->
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">AvenuePortalInstallLib.CA.dll</file>	<!-- Custom actions dll used for installer wix -->
+  <file type="SVN" path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">AvenuePortalSetup.msi</file>  <!-- Avenue Portal Installer -->
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">eSpline.PortalDatabase.dll</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">failure.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">OK.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">revision.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">upgrade.build</file>
+  <!-- Used by nant services to upgrade Avenue -->
+
+</AvenueManagingVC>

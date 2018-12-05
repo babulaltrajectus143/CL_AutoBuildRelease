@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApttusConnector mainfolder="Apttus Connector for SAP VC" subfolder="Apttus Connector - rev{SVN} - {Date}">
+
+  <file path="D:\Cdrive_backup\revisions\TranslatorForApttus\TranslatorForRodos\AvPoTfRodos_*_*_GITtag_*.msi" sortby="Date">AvPoTfRodos_*_*_GITtag_*.msi</file>
+
+</ApttusConnector>

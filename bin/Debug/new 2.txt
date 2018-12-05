@@ -1,0 +1,40 @@
+<html>
+<body>
+<Table>
+	<th>File Name</th>
+	<th>SVN/Git Revision No</th>
+	<tr>
+		<td>AvenuePortalSetup.msi</td>
+		<td>7952</td>
+	</tr>
+	<tr>
+		<td>Avenue Portal Installation Guide.pdf</td>
+		<td>N/A</td>
+	</tr>
+	<tr>
+		<td>AvenuePortalInstallLib.CA.dll</td>
+		<td>N/A</td>
+	</tr>
+	<tr>
+		<td>AvPoTfA_*_*_GITtag_*.msi</td>
+		<td>d669697</td>
+	</tr>
+	<tr>
+		<td>AvPoAvQO_debug_*_*_GITtag_*.msi</td>
+		<td>d669697</td>
+	</tr>
+	<tr>
+		<td>Ok.txt</td>
+		<td>N/A</td>
+	</tr>
+	<tr>
+		<td>revision.txt</td>
+		<td>N/A</td>
+	</tr>
+	<tr>
+		<td>upgrade.build</td>
+		<td>N/A</td>
+	</tr>
+</Table>
+</html>
+</body>

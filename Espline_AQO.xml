@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AQO mainfolder="Avenue Quotes &amp; orders" subfolder="Avenue Quotes &amp; orders - rev{SVN} - {Date}">
+  <file type="SVN" pathFormat="" sortby="" path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">AvenuePortalSetup.msi</file>
+  <!-- Avenue Q&O. Sort by date and take latest always. -->
+  <file path="D:\cdrive_backup\revisions\AQO\AvPo_AvQO_Integration" sortby="Date">AvPoAvQO_debug_*_*_GITtag_*.msi</file>
+</AQO> 

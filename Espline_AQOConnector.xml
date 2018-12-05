@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApttusConnector mainfolder="Apttus Connector for SAP VC" subfolder="Apttus Connector - rev{SVN} - {Date}">
+
+  <file type="SVN" pathFormat="" sortby="" path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">AvenuePortalSetup.msi</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">Avenue Portal Installation Guide.pdf</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">AvenuePortalInstallLib.CA.dll</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">eSpline.PortalDatabase.dll</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">failure.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">OK.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">revision.txt</file>
+  <file path="C:\AvenueBuild\svn\AvenueVCCompare\Trunk\PublicDist">upgrade.build</file>
+
+
+  <!-- Avenue Q&O. Sort by date and take latest always. -->
+  <file path="D:\cdrive_backup\revisions\AQO\AvPo_AvQO_Integration" sortby="Date">AvPoAvQO_debug_*_*_GITtag_*.msi</file>
+
+  <!-- Translator for Apttus. Sort by date and take latest always. -->
+  <file path="D:\Cdrive_backup\revisions\TranslatorForApttus\TranslatorForApttus\AvPoTfA_*_*_GITtag_*.msi" sortby="Date">AvPoTfA_*_*_GITtag_*.msi</file>
+  <file path="D:\Cdrive_backup\revisions\TranslatorForRodos\RodosConnectorForSAPVCWizard_*.zip" sortby="Date">RodosConnectorForSAPVCWizard_*.zip</file>
+</ApttusConnector>
